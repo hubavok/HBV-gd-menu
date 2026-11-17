@@ -35,12 +35,11 @@ jobs:
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
-          sdk: nightly
+          sdk: v5.9.0
           bindings: geode-sdk/bindings
-          bindings-ref: main
+          bindings-ref: v5.9.0
           combine: true
           target: ${{ matrix.config.target }}
-
   package:
     name: Package builds
     runs-on: ubuntu-latest
