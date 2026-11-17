@@ -1,0 +1,71 @@
+{
+	"geode": "4.6.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "hbv.hbv-menu",
+	"name": "HBV Menu",
+	"version": "v1.0.0",
+	"developer": "HBV",
+	"description": "A mod menu with noclip, speedhack, icon hack, a startpos switcher, hitboxes and more.",
+	"tags": ["utility", "gameplay", "customization"],
+	"settings": {
+		"noclip": {
+			"name": "Noclip",
+			"description": "Survive hazards and walls. The anti-cheat spike still kills you.",
+			"type": "bool",
+			"default": false
+		},
+		"speedhack": {
+			"name": "Speedhack",
+			"description": "Enable the game speed multiplier below.",
+			"type": "bool",
+			"default": false
+		},
+		"speed": {
+			"name": "Speed",
+			"description": "Game speed multiplier (1.0 = normal).",
+			"type": "float",
+			"default": 1.0,
+			"min": 0.05,
+			"max": 10.0,
+			"control": {
+				"input": true,
+				"slider": true
+			}
+		},
+		"icon-hack": {
+			"name": "Icon Hack",
+			"description": "Unlock all icons and colors.",
+			"type": "bool",
+			"default": false
+		},
+		"startpos-switcher": {
+			"name": "Startpos Switcher",
+			"description": "Show on-screen arrows to switch between start positions in a level.",
+			"type": "bool",
+			"default": true
+		},
+		"hitboxes": {
+			"name": "Show Hitboxes",
+			"description": "Draw hitboxes in the level.",
+			"type": "bool",
+			"default": false
+		},
+		"labels": {
+			"name": "Info Label",
+			"description": "Show FPS, noclip accuracy and a cheat indicator in the corner.",
+			"type": "bool",
+			"default": true
+		},
+		"safe-mode": {
+			"name": "Safe Mode",
+			"description": "If noclip or speedhack is on, completing a level will not be saved or submitted.",
+			"type": "bool",
+			"default": true
+		}
+	}
+}
